@@ -5,3 +5,10 @@ const result = arr
                 .map(name => `I love ${name}`);
 console.log(result);
 
+
+const btn = document.getElementById('btn');
+
+btn.addEventListener('click',(e) => {
+     console.log(this);this.childElementCount;
+     e.preventDefault();
+})
