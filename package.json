@@ -4,7 +4,9 @@
   "description": "Biblioteca do curso de JS com TDD na prática.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "./node_modules/.bin/eslint src/*.js",
+    "prepush": "npm run lint",
+    "test": "./node_modules/.bin/mocha tests/**/*.spec.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +24,14 @@
   },
   "homepage": "https://github.com/Dheyson/js-tdd-course#readme",
   "devDependencies": {
-    "husky": "^3.1.0"
+    "chai": "^4.2.0",
+    "eslint": "^7.1.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.20.0",
+    "husky": "^3.1.0",
+    "mocha": "^7.2.0"
   },
   "dependencies": {}
 }
