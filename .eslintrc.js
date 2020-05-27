@@ -5,4 +5,8 @@ module.exports = {
     'jsx-a11y',
     'import',
   ],
+  env: {
+    jest: true,
+    mocha: true,
+  },
 };
