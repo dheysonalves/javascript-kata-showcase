@@ -11,5 +11,9 @@ const calculate = (number) => {
   return number;
 };
 
+const foo = () => {
+  return 'bla';
+};
+
 // eslint-disable-next-line import/prefer-default-export
-export { calculate };
+export { calculate, foo };
