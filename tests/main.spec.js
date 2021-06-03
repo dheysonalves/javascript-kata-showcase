@@ -17,4 +17,8 @@ describe('Main', () => {
   it('should return the number if not divisible by any', () => {
     expect(calculate(16)).to.be.equal(16);
   });
+
+  it('should return the 0 when 0', () => {
+    expect(calculate(0)).to.be.equal(0);
+  });
 });
