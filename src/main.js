@@ -1,13 +1,13 @@
-const sum = (num1, num2) => num1 + num2;
-const sub = (num1, num2) => num1 - num2;
-const mult = (num1, num2) => num1 * num2;
-const div = (num1, num2) => ((num2 === 0) ? 'Not possible to divide by zero' : num1 / num2);
-const pow = (num1, num2) => num1 ** num2;
+const calculate = (number) => {
+  if (number % 3 === 0 && number % 5 === 0) {
+    return 'FizzBuzz';
+  } if (number % 3 === 0) {
+    return 'Fizz';
+  } if (number % 5 === 0) {
+    return 'Buzz';
+  }
 
-export {
-  sum,
-  sub,
-  mult,
-  div,
-  pow,
+  return number;
 };
+
+export { calculate };
