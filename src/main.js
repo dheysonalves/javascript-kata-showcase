@@ -10,4 +10,5 @@ const calculate = (number) => {
   return number;
 };
 
+// eslint-disable-next-line import/prefer-default-export
 export { calculate };
