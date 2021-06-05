@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { calculate } from '../src/main';
+import { calculate } from '../../src/FizzBuzz/main';
 
 describe('Main', () => {
   it('should return `Fizz` if divisible by 3', () => {
