@@ -1,29 +1,24 @@
-// // We describe some file or method
-// describe('Main', () => {
-//   describe('Method A', () => {
-//     // We set a context based on a method
-//     context('Case 1', () => {
-//       // It is gonna run the tests
-//       // Skip allow to jump to the next case
-//       it.skip('should happen something', () => {
-//         // What should happen here!
-//         throw new Error('Just an error');
-//       });
-//     });
-//     // It tells to run only this code block
-//     context('Case 2', () => {
-//       it('should happen something', () => {
-//         // What should happen here!
-//         throw new Error('Just an error');
-//       });
+import { expect } from 'chai';
+import { calculate } from '../src/main';
 
-//       it('should happen ninini', () => {
-//         // What should happen here!
-//       });
-//     });
-//   });
+describe('Main', () => {
+  it('should return `Fizz` if divisible by 3', () => {
+    expect(calculate(9)).to.be.equal('Fizz');
+  });
 
-//   describe('Method B', () => {
+  it('should return `Buzz` if divisible by 5', () => {
+    expect(calculate(10)).to.be.equal('Buzz');
+  });
 
-//   });
-// });
+  it('should return `FizzBuzz` if divisible by 3 and 5', () => {
+    expect(calculate(15)).to.be.equal('FizzBuzz');
+  });
+
+  it('should return the number if not divisible by any', () => {
+    expect(calculate(16)).to.be.equal(16);
+  });
+
+  it('should return the 0 when 0', () => {
+    expect(calculate(0)).to.be.equal(0);
+  });
+});
