@@ -1,12 +1,7 @@
 function MultiplyClosure(arr) {
-  const newArray = [];
-
-  return ((item) => {
-    arr.map((element) => {
-      newArray.push(element * item);
-    });
-    return newArray;
-  });
+  return function factor(item) {
+    return arr.map(((element) => element * item));
+  };
 }
 
 export default MultiplyClosure;
