@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import ArrayBetween from '../../src/LessThanGreaterThan/main';
+import ArrayBetween from './main';
 
 describe('Array between two numbers', () => {
   // it('should return the file', () => {
