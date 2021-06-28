@@ -1,3 +1,4 @@
+/* eslint-disable no-plusplus */
 const group = ((arrayOfNumbers, lengthDivision) => {
   const groupSize = Math.round(arrayOfNumbers.length / lengthDivision);
   const auxArray = [];
